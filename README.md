@@ -2,8 +2,38 @@
 
 > ### Django REST Framework + Angular codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
 
+## 🚀 Coder-Enhanced Fork
 
-### [Demo](https://thanhdev.pythonanywhere.com/)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
+This is a fork of [thanhdev/realworld-django-rest-framework-angular](https://github.com/thanhdev/realworld-django-rest-framework-angular) specifically enhanced for [Coder](https://coder.com) development environments and Claude Code tasks.
+
+### ✨ Coder-Specific Enhancements
+
+This fork includes the following improvements for seamless development in Coder workspaces:
+
+- **🔧 Fixed ALLOWED_HOSTS**: Updated Django settings to work with Coder's dynamic URLs and port forwarding
+- **🐍 Enhanced .gitignore**: Added comprehensive Python patterns to ignore `__pycache__/` and other Python artifacts
+- **🌱 Database Seeding**: Added `seed_data.py` script to populate the database with sample articles, users, and comments
+- **⚡ Quick Start Script**: Added `start-dev.sh` for one-command setup of both frontend and backend servers in tmux
+- **📚 Sample Content**: Pre-loaded with 5 technical articles, 3 users, and realistic development content
+
+### 🎯 Quick Start for Coder
+
+```bash
+# Clone and start everything
+git clone https://github.com/coder-contrib/realworld-django-rest-framework-angular.git
+cd realworld-django-rest-framework-angular
+./start-dev.sh
+
+# Seed the database with sample data
+source .venv/bin/activate && python seed_data.py
+```
+
+**Default Login Credentials:**
+- Email: `alice@realworld.io` / Password: `password123`
+- Email: `bob@realworld.io` / Password: `password123`
+- Email: `charlie@realworld.io` / Password: `password123`
+
+### [Demo](https://thanhdev.pythonanywhere.com/)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)&nbsp;&nbsp;&nbsp;&nbsp;[Original Repo](https://github.com/thanhdev/realworld-django-rest-framework-angular)
 
 
 This codebase was created to demonstrate a fully fledged fullstack application built with **Django REST Framework + Angular** including CRUD operations, authentication, routing, pagination, and more.
