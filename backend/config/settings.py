@@ -88,6 +88,9 @@ WSGI_APPLICATION = "config.wsgi.application"
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_URLS_REGEX = r"^/api/.*$"
 
+# Allow iframe embedding
+X_FRAME_OPTIONS = 'ALLOWALL'
+
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases

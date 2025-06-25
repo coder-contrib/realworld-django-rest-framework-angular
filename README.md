@@ -11,6 +11,7 @@ This is a fork of [thanhdev/realworld-django-rest-framework-angular](https://git
 This fork includes the following improvements for seamless development in Coder workspaces:
 
 - **🔧 Fixed ALLOWED_HOSTS**: Updated Django settings to work with Coder's dynamic URLs and port forwarding
+- **🖼️ Iframe Support**: Configured X-Frame-Options to allow embedding in iframes for preview environments
 - **🐍 Enhanced .gitignore**: Added comprehensive Python patterns to ignore `__pycache__/` and other Python artifacts
 - **🌱 Database Seeding**: Added `seed_data.py` script to populate the database with sample articles, users, and comments
 - **⚡ Smart Development Script**: Enhanced `start-dev.sh` with full lifecycle management (init, start, stop, restart, status)
