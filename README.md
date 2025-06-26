@@ -17,6 +17,7 @@ This fork includes the following improvements for seamless development in Coder 
 - **⚡ Smart Development Script**: Enhanced `start-dev.sh` with full lifecycle management (init, start, stop, restart, status)
 - **🤖 Agent-Friendly**: Automated environment detection and setup - perfect for Claude Code and other AI assistants
 - **📚 Sample Content**: Pre-loaded with 5 technical articles, 3 users, and realistic development content
+- **🎨 Modular CSS**: Refactored from hosted CSS to maintainable local SCSS modules
 
 ### 🎯 Quick Start (Recommended)
 
