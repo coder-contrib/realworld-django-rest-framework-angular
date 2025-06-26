@@ -1,0 +1,20 @@
+// Main SCSS entry point
+// Import order is important - variables first, then base styles, then components
+
+// Utility classes and mixins (must be first)
+@import './utils/variables';
+@import './utils/mixins';
+
+// Base styles (Bootstrap + resets)
+@import './base/bootstrap';
+@import './base/fonts';
+@import './base/global';
+
+// Component styles
+@import './components/buttons';
+@import './components/forms';
+@import './components/cards';
+@import './components/navigation';
+
+// Theme customizations
+@import './themes/realworld';

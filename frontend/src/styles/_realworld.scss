@@ -1,0 +1,24 @@
+// RealWorld Theme - Modular SCSS Structure
+// This replaces the hosted CSS with local, maintainable modules
+
+// 1. Variables first
+@import './base/variables';
+
+// 2. Include Bootstrap 4 base (keep Bootstrap 4 for compatibility)
+@import './bootstrap-base';
+
+// 3. Base theme styles
+@import './base/base';
+
+// 4. Component styles
+@import './components/layout';
+@import './components/navigation';
+@import './components/tags';
+@import './components/buttons';
+@import './components/articles';
+@import './components/comments';
+
+// 5. Page-specific styles
+@import './pages/home';
+@import './pages/profile';
+@import './pages/editor';

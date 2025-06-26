@@ -1,0 +1,42 @@
+// Navigation component styles
+
+.navbar-brand {
+  font-family: $font-family-logo;
+  font-size: 1.5rem !important;
+  padding-top: 0rem !important;
+  margin-right: 2rem !important;
+  color: $brand-primary !important;
+}
+
+.nav-link {
+  .user-pic {
+    height: 26px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 5px;
+  }
+  
+  &:hover {
+    transition: 0.1s all;
+  }
+}
+
+.nav-pills.outline-active {
+  .nav-link {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: $tag-muted-color;
+    
+    &:hover {
+      color: #555;
+    }
+    
+    &.active {
+      background: #fff !important;
+      border-bottom: 2px solid $brand-primary !important;
+      color: $brand-primary !important;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Tag component styles
+
+.tag-default {
+  color: #fff !important;
+  font-size: 0.8rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  white-space: nowrap;
+  margin-right: 3px;
+  margin-bottom: 0.2rem;
+  display: inline-block;
+  
+  &:hover {
+    text-decoration: none;
+  }
+  
+  &.tag-outline {
+    border: 1px solid $tag-border-color;
+    color: $tag-muted-color !important;
+    background: none !important;
+  }
+}
+
+ul.tag-list {
+  padding-left: 0px !important;
+  display: inline-block;
+  list-style: none !important;
+  
+  li {
+    display: inline-block !important;
+  }
+}

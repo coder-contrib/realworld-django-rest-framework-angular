@@ -140,6 +140,69 @@ tmux new-session -d -s frontend 'npm --prefix=frontend start'
 - **Angular dev server**: http://localhost:4200 (if started separately)
 - **API endpoints**: http://localhost:8000/api
 
+## 🎨 Styling Architecture
+
+The application now uses a modern, maintainable SCSS structure instead of relying on external hosted CSS:
+
+### 📁 Directory Structure
+```
+frontend/src/styles/
+├── _realworld.scss       # Main entry point for modular theme
+├── bootstrap-base.css    # Extracted Bootstrap 4 alpha base styles
+├── original-main.css     # Complete original CSS (backup)
+├── base/                 # Foundation styles
+│   ├── _variables.scss   # Theme colors and variables
+│   └── _base.scss        # Global base styles
+├── components/           # Component-specific styles
+│   ├── _articles.scss    # Article preview and page styles
+│   ├── _buttons.scss     # Button customizations
+│   ├── _comments.scss    # Comment component styles
+│   ├── _layout.scss      # Banner, footer, layout components
+│   ├── _navigation.scss  # Navbar and navigation styles
+│   └── _tags.scss        # Tag component styles
+└── pages/                # Page-specific styles
+    ├── _home.scss        # Home page banner and sidebar
+    ├── _profile.scss     # User profile page styles
+    └── _editor.scss      # Article editor page styles
+```
+
+### 🎯 Key Features
+- **Extracted Local CSS**: Original hosted CSS now organized locally
+- **Exact Visual Match**: Same styling as original, but maintainable
+- **Modular Architecture**: Easy to find and modify specific styles
+- **SCSS Variables**: Consistent theming with `$brand-primary: #5CB85C`
+- **Component Isolation**: Each UI component has its own style file
+- **Bootstrap 4 Alpha Base**: Preserves original Bootstrap version for compatibility
+
+### 🔧 For Contributors
+
+**Adding New Styles:**
+1. Component styles → `styles/components/_component-name.scss`
+2. Page-specific styles → `styles/pages/_page-name.scss` 
+3. New variables → `styles/base/_variables.scss`
+4. Import new files in `styles/_realworld.scss`
+
+**Available Variables:**
+```scss
+$brand-primary: #5CB85C;     // Main green color
+$brand-danger: #B85C5C;      // Error/danger color
+$brand-dark: #333;           // Dark backgrounds
+$brand-light: #f3f3f3;       // Light backgrounds
+$font-family-logo: "Titillium Web", sans-serif;
+$font-family-content: 'Source Serif Pro', serif;
+$text-muted: #bbb;           // Muted text color
+$tag-muted-color: #aaa;      // Tag text color
+```
+
+**Build Process:**
+```bash
+# The styling is automatically compiled during build
+npm run build
+
+# For development with hot reload
+npm start
+```
+
 ## Troubleshooting
 
 **❌ "TemplateDoesNotExist: index.html"**

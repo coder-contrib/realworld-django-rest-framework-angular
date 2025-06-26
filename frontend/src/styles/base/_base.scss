@@ -1,0 +1,28 @@
+// Base global styles
+
+.logo-font {
+  font-family: $font-family-logo;
+}
+
+html {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: $footer-height;
+}
+
+.container.page {
+  margin-top: 1.5rem;
+}
+
+.error-messages {
+  color: $brand-danger !important;
+  font-weight: bold;
+}
+
+.preview-link {
+  color: inherit !important;
+  
+  &:hover {
+    text-decoration: inherit !important;
+  }
+}
