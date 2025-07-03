@@ -18,6 +18,7 @@ This fork includes the following improvements for seamless development in Coder 
 - **🤖 Agent-Friendly**: Automated environment detection and setup - perfect for Claude Code and other AI assistants
 - **📚 Sample Content**: Pre-loaded with 5 technical articles, 3 users, and realistic development content
 - **🎨 Modular CSS**: Refactored from hosted CSS to maintainable local SCSS modules
+- **🔄 Angular Proxy**: Configured dev server proxy to avoid CORS issues in Coder environments
 
 ### 🎯 Quick Start (Recommended)
 
@@ -49,9 +50,11 @@ cd realworld-django-rest-framework-angular
 ```
 
 **🌐 Access Your App:**
-- **Frontend (dev)**: http://localhost:4200 (with hot reload)
+- **Frontend (dev)**: http://localhost:4200 (with hot reload and API proxy)
 - **Django + Angular**: http://localhost:8000 (production-like)
 - **Backend API**: http://localhost:8000/api
+
+> **💡 Coder Users:** Use the port 4200 preview URL for the best development experience. The Angular dev server includes an API proxy that handles all backend requests seamlessly.
 
 **🔑 Default Login Credentials:**
 - Email: `alice@realworld.io` / Password: `password123`
@@ -138,8 +141,10 @@ tmux new-session -d -s frontend 'npm --prefix=frontend start'
 
 ### Access Points
 - **Django + Angular (static)**: http://localhost:8000
-- **Angular dev server**: http://localhost:4200 (if started separately)
+- **Angular dev server**: http://localhost:4200 (with API proxy - recommended for development)
 - **API endpoints**: http://localhost:8000/api
+
+> **⚡ Development Tip:** The Angular dev server (port 4200) includes a proxy configuration that automatically routes all `/api/*` requests to the Django backend. This prevents CORS issues and works seamlessly in both local and Coder environments.
 
 ## 🎨 Styling Architecture
 
