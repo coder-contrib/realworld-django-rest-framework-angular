@@ -7,6 +7,14 @@
           <a routerLink="/register">Need an account?</a>
         </p>
 
+        <!-- Demo Login Credentials -->
+        <div style="background-color: #d1ecf1; border: 1px solid #bee5eb; color: #0c5460; padding: 12px; border-radius: 4px; margin-bottom: 20px;">
+          <h6 style="margin: 0 0 8px 0; font-weight: bold;">Demo Login Credentials:</h6>
+          <p style="margin: 0 0 4px 0;"><strong>Email:</strong> alice&#64;realworld.io</p>
+          <p style="margin: 0 0 4px 0;"><strong>Password:</strong> password123</p>
+          <small style="color: #6c757d;">You can also use bob&#64;realworld.io or charlie&#64;realworld.io with the same password</small>
+        </div>
+
         <app-error-message [errors]="errors()"></app-error-message>
 
         <form [formGroup]="mainForm">
