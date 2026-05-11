@@ -87,7 +87,7 @@ Django REST Framework (DRF) is a powerful toolkit for building Web APIs in Djang
 First, install Django REST Framework:
 
 ```bash
-pip install djangorestframework
+uv pip install djangorestframework
 ```
 
 ## Basic Serializer

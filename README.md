@@ -75,14 +75,14 @@ The `./start-dev.sh` script handles all setup automatically, but if you prefer m
 ### Prerequisites
 - Python 3.10+
 - Node.js 18.5.0+
+- [uv](https://docs.astral.sh/uv/) (Python package manager)
 
 ### Setup Steps
 
 1. **Environment Setup**
    ```shell
-   python3 -m venv .venv
-   source .venv/bin/activate  # or .venv/Scripts/activate on Windows
-   pip install -r backend/requirements.txt
+   uv venv .venv
+   uv pip install --python .venv/bin/python -r backend/requirements.txt
    npm --prefix=frontend install
    ```
 

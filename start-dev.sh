@@ -53,14 +53,14 @@ setup_environment() {
     # Check if virtual environment exists
     if [ ! -d ".venv" ]; then
         print_warning "Python virtual environment not found. Creating..."
-        python3 -m venv .venv
+        uv venv .venv
         print_status "Virtual environment created"
     fi
 
     # Check if backend dependencies are installed
     if [ ! -f ".venv/lib/python3.12/site-packages/django/__init__.py" ]; then
         print_warning "Backend dependencies not found. Installing..."
-        source .venv/bin/activate && pip install -r backend/requirements.txt
+        uv pip install --python .venv/bin/python -r backend/requirements.txt
         print_status "Backend dependencies installed"
     fi
 
