@@ -1,0 +1,11 @@
+node_modules/
+dist/
+dist-electron/
+release/
+storage/database.sqlite
+storage/backups/*.sqlite
+storage/uploads/*
+storage/temp/*
+.angular/
+*.log
+.env
